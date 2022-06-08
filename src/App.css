@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.title {
+  margin: 10px;
+  color: #055a5b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.recipe {
+    background-color: #61BFAD;
+    padding: 9px 9px 3px 9px;
+    border-radius: 3px;
+    margin: 10px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .recipe-title {
+    margin: 0;
+    text-transform: uppercase;
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+
+  .recipe-title:hover {
+    text-decoration: underline;
   }
-}
+  
+  .recipe-description {
+    display: none;
+  }
+
+  .recipe-description.isOpen {
+    display: block;
+  }
+
+  .ingredients-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ingredients-item:hover {
+    text-decoration: underline;
+  }
+
+  .btn {
+    background-color: #ff8b8b;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .note {
+    visibility: hidden;
+    color: #f24522;
+  }
+
+  .note.isVisible {
+    visibility: visible;
+  }
+
+  .ingredient-textarea {
+    width: 80%;
+    height: auto;
+  }
+
+  .add-recipe {
+    background-color: #FFC1B3;
+    padding: 9px;
+    border-radius: 3px;
+    margin: 10px;
+  }
+  
+  .add-recipe-title {
+    margin: 0;
+  }
